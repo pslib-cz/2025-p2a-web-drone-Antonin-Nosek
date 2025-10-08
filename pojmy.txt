@@ -1,0 +1,4 @@
+tagy→ p,h1,a,img...(promenna)
+elementy→tagy nactene strankou(nactena promenna)
+kombinator→[main h1{color:blue;}]→styl se aplikuje jen na h1 uvnitr main
+kombinator→[main > h1] → dosahne pouze na h1 jenz je obalena main( kdyz h1 bude obalena jeste necim predtim tak se to nevstahuje)
