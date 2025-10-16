@@ -58,6 +58,11 @@
         color: black;
         text-decoration: none;
     }
+    .button-blue {
+        background-color: var(--primary-color);
+        color: white;
+        text-decoration: none;
+    }
     .img-fluid {
         display: block;
         width: 100%;
@@ -68,7 +73,9 @@
     }
     .img-block__caption {
         text-align: center;
-        margin-top: 0.5em;
+        font-size: 14px;
+        padding: 16px;
+        margin-bottom: 1em;
     }
     .info-box {
         padding: 1.5rem;
@@ -77,12 +84,109 @@
     }
     .info-box__title {
         color: var(--text-color);
-        font-size: 1.125em;
         margin-bottom: 1em;
+    }
+    .info-box__h1 {
+        font-size: 18px;
+        font-weight: 700;
     }
     .info-box__content {
         color: var(--text-color);
         font-size: 1em;
         line-height: 1.5;
     }
+    .offer-box {
+        color: var(--text-color);
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    .offer-box__title {
+        color: var(--text-color);
+        margin-bottom: 1em;
+    }
+    .offer-box__h1 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 1em;
+    }
+    .offer-box__content {
+        color: var(--text-color);
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .offer-box__list {
+        list-style: none;
+        padding-left: 8px;
+    }
+    .li-style::marker {
+        color: var(--primary-color);
+        font-size: 1.2rem;
+    }
+    .drone-store {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+    .drone-store > header {
+        flex-basis: 100%;
+        box-sizing: border-box;
+    }
+    .drone-store__title {
+        color: var(--text-color);
+        margin-bottom: 5px;
+    }
+    .drone-store__h1 {
+        font-size: 28px;
+        font-weight: 700;
+    }
+    .drone-store > span {
+        flex: 1 1 280px; 
+        min-width: 280px;
+        max-width: 560px; 
+        box-sizing: border-box;
+    }
+    .drone-store__item {
+        max-width: 280px;
+    }
+    .img-store {
+        display: block;
+        width: 100%;
+        max-width: 280px;
+        max-height: 250px;
+        border: 1px;
+        border-radius: 0.5rem;
+    }
+    .drone-store__item-h1 {
+        color: var(--text-color);
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    .drone-store__content {
+        color: var(--text-color);
+        max-width: 280px;
+    }
+    .drone-discount {
+        color: var(--text-color);
+        background-color: var(--header-bg-color);
+        width: 100%;
+        padding: 2rem;
+        border-radius: 0.2rem;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .drone-discount__title {
+        color: var(--text-color);
+        margin-bottom: 1em;
+    }
+    .drone-discount__h1 {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 1em;
+    }
+    .h1__max {
+        font-size: 4rem;}
 }
