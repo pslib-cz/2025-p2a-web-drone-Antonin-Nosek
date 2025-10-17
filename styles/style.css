@@ -9,9 +9,10 @@
         --header-bg-color: light-dark(#3B3E40, #3B3E40);
         --header-text-color: light-dark(#FFF, #FFF);
         --primary-color: light-dark(#66D4D4, #2b5757);
+        --text-color-primary: light-dark(#FFF, #FFF);
         --secondary-color: light-dark(#FFF, #FFF);
         --text-color: light-dark(#000, #FFF);
-        --bg-color : light-dark(#FFF, #000);
+        --bg-color : light-dark(#FFF, #1F1F1F);
     }
     html {
         font-family: 'Open Sans', sans-serif;
@@ -60,7 +61,7 @@
     }
     .button-blue {
         background-color: var(--primary-color);
-        color: white;
+        color: var(--text-color-primary);
         text-decoration: none;
     }
     .img-fluid {
@@ -122,18 +123,16 @@
         color: var(--primary-color);
         font-size: 1.2rem;
     }
-    .drone-store {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: flex-start;
+    .card {
+        display: inline-block;
+        margin-bottom: 2rem;
         gap: 1rem;
-    }
-    .drone-store > header {
-        flex-basis: 100%;
-        box-sizing: border-box;
+        max-width: 20rem;
+        padding: 1em;
+        vertical-align: top;
     }
     .drone-store__title {
+        display: block;
         color: var(--text-color);
         margin-bottom: 5px;
     }
@@ -141,28 +140,11 @@
         font-size: 28px;
         font-weight: 700;
     }
-    .drone-store > span {
-        flex: 1 1 280px; 
-        min-width: 280px;
-        max-width: 560px; 
-        box-sizing: border-box;
-    }
-    .drone-store__item {
-        max-width: 280px;
-    }
-    .img-store {
-        display: block;
-        width: 100%;
-        max-width: 280px;
-        max-height: 250px;
-        border: 1px;
-        border-radius: 0.5rem;
-    }
     .drone-store__item-h1 {
         color: var(--text-color);
         font-size: 18px;
         font-weight: 700;
-        margin-top: 1em;
+        margin-top: 0.2em;
         margin-bottom: 1em;
     }
     .drone-store__content {
@@ -170,23 +152,35 @@
         max-width: 280px;
     }
     .drone-discount {
-        color: var(--text-color);
+        color: white;
         background-color: var(--header-bg-color);
         width: 100%;
         padding: 2rem;
+        padding-top: 1rem;
         border-radius: 0.2rem;
         text-align: center;
         margin-top: 2rem;
     }
     .drone-discount__title {
-        color: var(--text-color);
+        color: white;
         margin-bottom: 1em;
     }
     .drone-discount__h1 {
-        font-size: 32px;
+        font-size: calc(2.1em + 1vw);
         font-weight: 700;
         margin-bottom: 1em;
+        margin-top: 1rem;
     }
     .h1__max {
-        font-size: 4rem;}
+        font-size: calc(2.5em + 2vw);
+    }
+    .footer {
+        background-color: var(--header-bg-color);
+        text-align: center;
+        padding: 3rem;
+    }
+    .footer__content {
+        color: var(--header-text-color);
+        text-decoration: none;
+    }
 }
