@@ -183,4 +183,32 @@
         color: var(--header-text-color);
         text-decoration: none;
     }
+    .galerie{
+        margin-top: 6rem;
+        box-sizing: border-box;
+        margin: -1em;
+       }
+       .galerie__title{
+        padding-top: 6rem;
+       }
+       .galerie__row__item{
+        box-sizing: border-box;
+        width:calc(50% - 1em);
+        display: inline-block;
+        vertical-align: top;
+        margin: 0.5em;
+       }
+       .galerie__row__item--w100{
+        width:calc(100% - 0.5em);
+       }
+       .footer{
+        background-color: var(--header-bg-color);
+        margin-top: 3rem;
+        padding: 3rem;
+        text-align: center;
+       }
+       .footer__link{
+        color: var(--header-text-color);
+        text-decoration: none;
+       }
 }
