@@ -12,7 +12,6 @@
         --text-color-primary: light-dark(#FFF, #FFF);
         --secondary-color: light-dark(#FFF, #FFF);
         --text-color: light-dark(#000, #FFF);
-        --bg-color : light-dark(#FFF, #1F1F1F);
     }
     html {
         font-family: 'Open Sans', sans-serif;
@@ -124,13 +123,18 @@
         font-size: 1.2rem;
     }
     .card {
-        display: inline-block;
-        margin-bottom: 2rem;
-        gap: 1rem;
-        max-width: 20rem;
         padding: 1em;
-        vertical-align: top;
+        border: 2px solid;
+        display: grid;
+        grid-template-rows: auto auto 1fr auto;
+        grid-row-end: span 4;
     }
+    .drone-card{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(min(15rem,100%),1fr));
+        grid-template-rows: subgrid;
+        grid-gap: 10px;
+    };
     .drone-store__title {
         display: block;
         color: var(--text-color);
